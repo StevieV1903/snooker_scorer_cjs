@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PlayerComponent.css';
 
 
-const Player = ({ playerNumber, playerScore }) => {
+const Player = ({ playerNumber, playerScore, isPlayerOne }) => {
 
     const [ playerName, setPlayerName] = useState("");
 
@@ -11,10 +11,21 @@ const Player = ({ playerNumber, playerScore }) => {
         // alert(`Submitting Name ${playerName}`)
     }
 
-    
+    const playerAtTable = () => {
+        const atTable = ""
+    if(playerNumber === 1 && isPlayerOne === true){
+        atTable = <h3>AT TABLE</h3>
+      } else {
+        atTable = <h3></h3>
+      }
+      return atTable
+    }
+
+
 
 return (
     <>
+    
 <div>
     <form onSubmit={handleSubmit}>
         <label>
@@ -28,6 +39,8 @@ return (
     </form>
 
     <h1>Player { playerNumber }: {playerName}</h1>
+    {/* {isPlayerOne && <h3>AT TABLE</h3>} */}
+    {playerAtTable}
     <h2>Score: { playerScore }</h2>
 </div>
     

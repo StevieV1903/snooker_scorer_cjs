@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Buttons = ({player1Score, player2Score, isPlayerOne, setPlayer1Score, setPlayer2Score}) => {
+const Buttons = ({player1Score, player2Score, isPlayerOne, setPlayer1Score, setPlayer2Score, setIsPlayerOne }) => {
 
 const handleRed = () => {
     setPlayer1Score(player1Score += 1);
@@ -29,6 +29,16 @@ const handlePink = () => {
 const handleBlack = () => {
     setPlayer1Score(player1Score += 7);
 }
+
+const handleSwitchPlayer = () => {
+    if(isPlayerOne === true) {
+        setIsPlayerOne(false) 
+    } else {
+        setIsPlayerOne(true)
+    }
+    console.log(isPlayerOne)
+}
+
     return (
 <>
         <button onClick={handleRed}>RED</button>
@@ -38,6 +48,7 @@ const handleBlack = () => {
         <button onClick={handleBlue}>BLUE</button>
         <button onClick={handlePink}>PINK</button>
         <button onClick={handleBlack}>BLACK</button>
+        <button onClick={handleSwitchPlayer}>SWITCH PLAYER</button>
         {/* <button>FOUL</button> */}
 </>
 
