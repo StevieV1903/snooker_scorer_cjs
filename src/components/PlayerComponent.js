@@ -2,18 +2,14 @@ import React, { useState } from 'react';
 import './PlayerComponent.css';
 
 
-const Player = ({ playerNumber }) => {
+const Player = ({ playerNumber, playerScore }) => {
 
     const [ playerName, setPlayerName] = useState("");
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Submitting Name ${playerName}`)
+        // alert(`Submitting Name ${playerName}`)
     }
-
-    // const handleChange = (event) => {
-
-    // }
 
     
 
@@ -32,6 +28,7 @@ return (
     </form>
 
     <h1>Player { playerNumber }: {playerName}</h1>
+    <h2>Score: { playerScore }</h2>
 </div>
     
     </>
