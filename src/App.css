@@ -1,11 +1,22 @@
-.App {
+.player-names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.App-header h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+/* .App {
+  text-align: center;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
