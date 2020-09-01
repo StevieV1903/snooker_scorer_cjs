@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Player from './components/PlayerComponent.js';
 import Buttons from './components/ButtonsComponent.js';
+import FrameScorer from './components/FrameScore.js';
 
 function App() {
 
@@ -12,6 +13,9 @@ function App() {
   const [player2Break, setPlayer2Break ] = useState(0);
   const [player1Breaks, setPlayer1Breaks] = useState([]);
   const [player2Breaks, setPlayer2Breaks] = useState([]);
+  const [player1Frames, setPlayer1Frames] = useState(0)
+  const [player2Frames, setPlayer2Frames] = useState(0)
+
 
 
   return (
@@ -25,6 +29,10 @@ function App() {
           activePlayer={activePlayer}
           playerBreak={player1Break}
           playerBreaks={player1Breaks}
+          />
+          <FrameScorer 
+          player1Frames={player1Frames}
+          player2Frames={player2Frames}
           />
           <Player 
           playerNumber={2} 
@@ -49,6 +57,12 @@ function App() {
         player2Breaks={player2Breaks}
         setPlayer1Breaks={setPlayer1Breaks}
         setPlayer2Breaks={setPlayer2Breaks}
+        player1Frames={player1Frames}
+        player2Frames={player2Frames}
+        setPlayer1Frames={setPlayer1Frames}
+        setPlayer2Frames={setPlayer2Frames}
+
+
         />
       </header>
     </div>

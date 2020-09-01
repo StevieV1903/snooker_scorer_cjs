@@ -65,6 +65,14 @@ button {
     border-radius: 50%;
     border: none;
 }
+#foul-button {
+    background-color: whitesmoke;
+    color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
 
 .game-button {
     margin-top: 30px;
