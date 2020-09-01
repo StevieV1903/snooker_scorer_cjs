@@ -30,6 +30,10 @@ const handleBlack = () => {
     setPlayer1Score(player1Score += 7);
 }
 
+const handleEndFrame = () => {
+    setPlayer1Score(0)
+}
+
 const handleSwitchPlayer = () => {
     if(isPlayerOne === true) {
         setIsPlayerOne(false) 
@@ -48,7 +52,9 @@ const handleSwitchPlayer = () => {
         <button onClick={handleBlue}>BLUE</button>
         <button onClick={handlePink}>PINK</button>
         <button onClick={handleBlack}>BLACK</button>
+        <br></br>
         <button onClick={handleSwitchPlayer}>SWITCH PLAYER</button>
+        <button onClick={handleEndFrame}>END FRAME</button>
         {/* <button>FOUL</button> */}
 </>
 

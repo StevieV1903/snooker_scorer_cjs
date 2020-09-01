@@ -15,10 +15,25 @@ function App() {
       <header className="App-header">
         <h1>Snooker Scorer</h1>
         <div className="player-names">
-          <Player playerNumber="1" playerScore={player1Score} isPlayerOne={isPlayerOne}/>
-          <Player playerNumber="2" playerScore={player2Score} isPlayerOne={isPlayerOne}/>
+          <Player 
+          playerNumber="1" 
+          playerScore={player1Score} 
+          isPlayerOne={isPlayerOne}
+          />
+          <Player 
+          playerNumber="2" 
+          playerScore={player2Score} 
+          isPlayerOne={isPlayerOne}
+          />
         </div>
-        <Buttons player1Score={player1Score} player2Score={player2Score} isPlayerOne={ isPlayerOne } setIsPlayerOne={setIsPlayerOne} setPlayer1Score={setPlayer1Score} setPlayer2Score={setPlayer2Score} />
+        <Buttons 
+        player1Score={player1Score} 
+        player2Score={player2Score} 
+        isPlayerOne={ isPlayerOne } 
+        setIsPlayerOne={setIsPlayerOne} 
+        setPlayer1Score={setPlayer1Score} 
+        setPlayer2Score={setPlayer2Score} 
+        />
       </header>
     </div>
   );
