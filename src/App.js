@@ -8,6 +8,10 @@ function App() {
   const [player1Score, setPlayer1Score] = useState(0);
   const [player2Score, setPlayer2Score] = useState(0);
   const [activePlayer, setActivePlayer ] = useState(1);
+  const [player1Break, setPlayer1Break ] = useState(0);
+  const [player2Break, setPlayer2Break ] = useState(0);
+  const [player1Breaks, setPlayer1Breaks] = useState([]);
+  const [player2Breaks, setPlayer2Breaks] = useState([]);
 
 
   return (
@@ -19,11 +23,15 @@ function App() {
           playerNumber={1} 
           playerScore={player1Score} 
           activePlayer={activePlayer}
+          playerBreak={player1Break}
+          playerBreaks={player1Breaks}
           />
           <Player 
           playerNumber={2} 
           playerScore={player2Score} 
           activePlayer={activePlayer}
+          playerBreak={player2Break}
+          playerBreaks={player2Breaks}
           />
         </div>
         <Buttons 
@@ -32,7 +40,15 @@ function App() {
         activePlayer={ activePlayer } 
         setActivePlayer={setActivePlayer} 
         setPlayer1Score={setPlayer1Score} 
-        setPlayer2Score={setPlayer2Score} 
+        setPlayer2Score={setPlayer2Score}
+        player1Break={player1Break}
+        player2Break={player2Break}
+        setPlayer1Break={setPlayer1Break}
+        setPlayer2Break={setPlayer2Break}
+        player1Breaks={player1Breaks}
+        player2Breaks={player2Breaks}
+        setPlayer1Breaks={setPlayer1Breaks}
+        setPlayer2Breaks={setPlayer2Breaks}
         />
       </header>
     </div>

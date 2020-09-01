@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PlayerComponent.css';
 
 
-const Player = ({ playerNumber, playerScore, activePlayer }) => {
+const Player = ({ playerNumber, playerScore, activePlayer, playerBreak, playerBreaks }) => {
 
     const [ playerName, setPlayerName] = useState("");
 
@@ -43,6 +43,10 @@ return (
     {/* {playerAtTable} */}
     
     <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Score: { playerScore }</h2>
+
+    <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}> Break: {playerBreak} </h2>
+
+    <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Highest Break: {playerBreaks[0]} </h2>
 </div>
     
     </>
