@@ -1,0 +1,79 @@
+#button-container {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    /* margin: auto; */
+}
+
+button {
+    margin: 5px;
+}
+
+#red-button {
+    background-color: red;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#yellow-button {
+    background-color: #ffd000;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#green-button {
+    background-color: green;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#brown-button {
+    background-color: brown;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#blue-button {
+    background-color: #6767fa;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#pink-button {
+    background-color: #ff8c9f;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+#black-button {
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+}
+
+.game-button {
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 200px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: rosybrown;
+    color: white;
+    border: solid 1px black;
+}

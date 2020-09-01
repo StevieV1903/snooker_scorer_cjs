@@ -1,3 +1,6 @@
-h1 {
-    
+.active-player {
+   color: green; 
 }
+.non-active-player {
+    color: black;
+} 

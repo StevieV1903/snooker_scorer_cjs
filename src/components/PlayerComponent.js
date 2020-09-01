@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PlayerComponent.css';
 
 
-const Player = ({ playerNumber, playerScore, isPlayerOne }) => {
+const Player = ({ playerNumber, playerScore, activePlayer }) => {
 
     const [ playerName, setPlayerName] = useState("");
 
@@ -11,15 +11,15 @@ const Player = ({ playerNumber, playerScore, isPlayerOne }) => {
         // alert(`Submitting Name ${playerName}`)
     }
 
-    const playerAtTable = () => {
-        const atTable = ""
-    if(playerNumber === 1 && isPlayerOne === true){
-        atTable = <h3>AT TABLE</h3>
-      } else {
-        atTable = <h3></h3>
-      }
-      return atTable
-    }
+    // const playerAtTable = () => {
+    //     const atTable = ""
+    // if(playerNumber === 1 && activePlayer === true){
+    //     atTable = <h3>AT TABLE</h3>
+    //   } else {
+    //     atTable = <h3></h3>
+    //   }
+    //   return atTable
+    // }
 
 
 
@@ -38,10 +38,11 @@ return (
         </label> 
     </form>
 
-    <h1>Player { playerNumber }: {playerName}</h1>
-    {/* {isPlayerOne && <h3>AT TABLE</h3>} */}
-    {playerAtTable}
-    <h2>Score: { playerScore }</h2>
+    <h1 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Player { playerNumber }: {playerName}</h1>
+    {/* {activePlayer && <h3>AT TABLE</h3>} */}
+    {/* {playerAtTable} */}
+    
+    <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Score: { playerScore }</h2>
 </div>
     
     </>

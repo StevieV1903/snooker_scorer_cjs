@@ -7,7 +7,7 @@ function App() {
 
   const [player1Score, setPlayer1Score] = useState(0);
   const [player2Score, setPlayer2Score] = useState(0);
-  const [isPlayerOne, setIsPlayerOne ] = useState(true);
+  const [activePlayer, setActivePlayer ] = useState(1);
 
 
   return (
@@ -16,21 +16,21 @@ function App() {
         <h1>Snooker Scorer</h1>
         <div className="player-names">
           <Player 
-          playerNumber="1" 
+          playerNumber={1} 
           playerScore={player1Score} 
-          isPlayerOne={isPlayerOne}
+          activePlayer={activePlayer}
           />
           <Player 
-          playerNumber="2" 
+          playerNumber={2} 
           playerScore={player2Score} 
-          isPlayerOne={isPlayerOne}
+          activePlayer={activePlayer}
           />
         </div>
         <Buttons 
         player1Score={player1Score} 
         player2Score={player2Score} 
-        isPlayerOne={ isPlayerOne } 
-        setIsPlayerOne={setIsPlayerOne} 
+        activePlayer={ activePlayer } 
+        setActivePlayer={setActivePlayer} 
         setPlayer1Score={setPlayer1Score} 
         setPlayer2Score={setPlayer2Score} 
         />
