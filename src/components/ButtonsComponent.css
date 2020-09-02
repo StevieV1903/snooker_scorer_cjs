@@ -2,11 +2,12 @@
     width: 100%;
     display: inline-block;
     text-align: center;
-    /* margin: auto; */
 }
 
 button {
-    margin: 5px;
+    margin: 7px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #red-button {
@@ -17,40 +18,45 @@ button {
     border-radius: 50%;
     border: none;
 }
+
 #yellow-button {
-    background-color: #ffd000;
+    background-color: #fbce02;
     color: white;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     border: none;
 }
+
 #green-button {
-    background-color: green;
+    background-color: rgb(0, 90, 0);
     color: white;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     border: none;
 }
+
 #brown-button {
-    background-color: brown;
+    background-color: #832121;
     color: white;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     border: none;
 }
+
 #blue-button {
-    background-color: #6767fa;
+    background-color: #3131ff;
     color: white;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     border: none;
 }
+
 #pink-button {
-    background-color: #ff8c9f;
+    background-color: #ff6a82;
     color: white;
     height: 80px;
     width: 80px;
@@ -65,6 +71,7 @@ button {
     border-radius: 50%;
     border: none;
 }
+
 #foul-button {
     background-color: whitesmoke;
     color: black;
@@ -80,6 +87,7 @@ button {
     margin-left: 40px;
     width: 200px;
     padding: 10px 15px;
+    border-radius: 8px;
     font-weight: bold;
     background-color: rosybrown;
     color: white;

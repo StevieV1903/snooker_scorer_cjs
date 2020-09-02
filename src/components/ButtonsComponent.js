@@ -10,7 +10,7 @@ const handleRed = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 1);
         setPlayer1Break(player1Break += 1)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 1);
         setPlayer2Break(player2Break += 1)
     }
@@ -20,7 +20,7 @@ const handleYellow = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 2);
         setPlayer1Break(player1Break += 2)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 2);
         setPlayer2Break(player2Break += 2)
     }
@@ -30,7 +30,7 @@ const handleGreen = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 3);
         setPlayer1Break(player1Break += 3)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 3);
         setPlayer2Break(player2Break += 3)
     }
@@ -40,7 +40,7 @@ const handleBrown = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 4);
         setPlayer1Break(player1Break += 4)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 4);
         setPlayer2Break(player2Break += 4)
     }
@@ -50,7 +50,7 @@ const handleBlue = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 5);
         setPlayer1Break(player1Break += 5)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 5);
         setPlayer2Break(player2Break += 5)
     }
@@ -60,7 +60,7 @@ const handlePink = () => {
     if(activePlayer === 1) {
         setPlayer1Score(player1Score += 6);
         setPlayer1Break(player1Break += 6)
-    }else {
+    } else {
         setPlayer2Score(player2Score += 6);
         setPlayer2Break(player2Break += 6)
     }
@@ -68,11 +68,11 @@ const handlePink = () => {
 
 const handleBlack = () => {
     if(activePlayer === 1) {
-    setPlayer1Score(player1Score += 7);
-    setPlayer1Break(player1Break += 7)
-}else {
-    setPlayer2Score(player2Score += 7);
-    setPlayer2Break(player2Break += 7)
+        setPlayer1Score(player1Score += 7);
+        setPlayer1Break(player1Break += 7)
+    } else {
+        setPlayer2Score(player2Score += 7);
+        setPlayer2Break(player2Break += 7)
     }
 }
 
@@ -86,7 +86,7 @@ const handleEndFrame = () => {
         setPlayer1Score(0)
         setPlayer2Score(0)
     }
-    handleSwitchPlayer()
+        handleSwitchPlayer()
 }
 
 const handleSwitchPlayer = () => {
@@ -96,7 +96,6 @@ const handleSwitchPlayer = () => {
         highBreaks.push(player1Break)
         highBreaks.sort((a, b) => b - a)
         setPlayer1Breaks(highBreaks)
-        // player1Breaks.sort((a, b) => b - a)
         setPlayer1Break(0) 
     } else {
         setActivePlayer(1)
@@ -106,7 +105,7 @@ const handleSwitchPlayer = () => {
         setPlayer2Breaks(highBreaks)
         setPlayer2Break(0)
     }
-    console.log(activePlayer)
+        // console.log(activePlayer)
 }
 
 const handleEndMatch = () => {

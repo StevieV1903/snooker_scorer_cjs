@@ -4,6 +4,8 @@ import Player from './components/PlayerComponent.js';
 import Buttons from './components/ButtonsComponent.js';
 import FrameScorer from './components/FrameScore.js';
 
+import balls from '././assets/snookertriangle.png';
+
 function App() {
 
   const [player1Score, setPlayer1Score] = useState(0);
@@ -20,8 +22,11 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
-        <h1>Snooker Scorer</h1>
+        <div className="App-title">
+          <h1>Snooker Scorer <img src={balls} alt="red snooker balls" /></h1>
+        </div>
         <div className="player-names">
           <Player 
           playerNumber={1} 
@@ -42,29 +47,29 @@ function App() {
           playerBreaks={player2Breaks}
           />
         </div>
-        <Buttons 
-        player1Score={player1Score} 
-        player2Score={player2Score} 
-        activePlayer={ activePlayer } 
-        setActivePlayer={setActivePlayer} 
-        setPlayer1Score={setPlayer1Score} 
-        setPlayer2Score={setPlayer2Score}
-        player1Break={player1Break}
-        player2Break={player2Break}
-        setPlayer1Break={setPlayer1Break}
-        setPlayer2Break={setPlayer2Break}
-        player1Breaks={player1Breaks}
-        player2Breaks={player2Breaks}
-        setPlayer1Breaks={setPlayer1Breaks}
-        setPlayer2Breaks={setPlayer2Breaks}
-        player1Frames={player1Frames}
-        player2Frames={player2Frames}
-        setPlayer1Frames={setPlayer1Frames}
-        setPlayer2Frames={setPlayer2Frames}
+          <Buttons 
+          player1Score={player1Score} 
+          player2Score={player2Score} 
+          activePlayer={ activePlayer } 
+          setActivePlayer={setActivePlayer} 
+          setPlayer1Score={setPlayer1Score} 
+          setPlayer2Score={setPlayer2Score}
+          player1Break={player1Break}
+          player2Break={player2Break}
+          setPlayer1Break={setPlayer1Break}
+          setPlayer2Break={setPlayer2Break}
+          player1Breaks={player1Breaks}
+          player2Breaks={player2Breaks}
+          setPlayer1Breaks={setPlayer1Breaks}
+          setPlayer2Breaks={setPlayer2Breaks}
+          player1Frames={player1Frames}
+          player2Frames={player2Frames}
+          setPlayer1Frames={setPlayer1Frames}
+          setPlayer2Frames={setPlayer2Frames}
+          />
 
-
-        />
       </header>
+
     </div>
   );
 }
