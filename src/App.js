@@ -9,6 +9,7 @@ function App() {
 	const [ player2Name, setPlayer2Name ] = useState('');
 	const [ matchDuration, setMatchDuration ] = useState(1);
 	const [ isMatchSetUp, setIsMatchSetUp ] = useState(false);
+	const [ firstBreaker, setFirstBreaker ] = useState('');
 
 	return (
 		<div className="App">
@@ -19,6 +20,9 @@ function App() {
 					setPlayer2Name={setPlayer2Name}
 					setMatchDuration={setMatchDuration}
 					setIsMatchSetUp={setIsMatchSetUp}
+					player1Name={player1Name}
+					player2Name={player2Name}
+					setFirstBreaker={setFirstBreaker}
 				/>
 			)}
 			{isMatchSetUp && (

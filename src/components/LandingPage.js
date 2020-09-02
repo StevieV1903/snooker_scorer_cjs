@@ -1,7 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
 
-const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp }) => {
+const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, setFirstBreaker }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		setIsMatchSetUp(true);
@@ -56,6 +56,14 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					<option value={35}>35</option>
 				</select><br/>
 			</label>
+            <label>
+                Select player to break:
+                <select onChange={(event) => setFirstBreaker(event.target.value)}>
+                    <option value="random">Random</option>
+                    <option value={player1Name}>{player1Name}</option>
+                    <option value={player2Name}>{player2Name}</option>
+                </select>
+            </label>
 
 			<input type="submit" value="Submit" />
 		</form>
