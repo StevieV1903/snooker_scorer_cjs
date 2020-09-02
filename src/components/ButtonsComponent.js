@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './ButtonsComponent.css';
 import FoulButtons from "./FoulButtons.js";
 
-const Buttons = ({player1Score, player2Score, activePlayer, setPlayer1Score, setPlayer2Score, setActivePlayer, player1Break, player2Break, setPlayer1Break, setPlayer2Break, player1Breaks, setPlayer1Breaks, player2Breaks, setPlayer2Breaks, player1Frames, player2Frames, setPlayer1Frames, setPlayer2Frames }) => {
+const Buttons = ({player1Score, player2Score, activePlayer, setPlayer1Score, setPlayer2Score, setActivePlayer, player1Break, player2Break, setPlayer1Break, setPlayer2Break, player1Breaks, setPlayer1Breaks, player2Breaks, setPlayer2Breaks, player1Frames, player2Frames, setPlayer1Frames, setPlayer2Frames, setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, matchDuration }) => {
 
-    const [isAFoul, setIsAFoul] = useState(false)
+const [isAFoul, setIsAFoul] = useState(false)
 
 const handleRed = () => {
     if(activePlayer === 1) {
@@ -86,6 +86,10 @@ const handleEndFrame = () => {
         setPlayer1Score(0)
         setPlayer2Score(0)
     }
+       const matchWin = ((parseInt(matchDuration) + 1 ) / 2)
+        if (player1Frames  || player2Frames === matchWin ){
+        handleEndMatch();
+        }
         handleSwitchPlayer()
 }
 
@@ -110,11 +114,11 @@ const handleSwitchPlayer = () => {
 
 const handleEndMatch = () => {
     if (player1Frames > player2Frames) {
-        alert("Player 1 has won")
+        alert( player1Name + " has won!")
     } else if (player2Frames > player1Frames){
-        alert("Player 2 has won")
+        alert(player2Name + " has won!")
     } else {
-        alert("It is a draw")
+        alert("It is a draw!")
     }
     setPlayer1Score(0)
     setPlayer2Score(0)
@@ -124,6 +128,10 @@ const handleEndMatch = () => {
     setPlayer2Breaks([])
     setPlayer1Frames(0)
     setPlayer2Frames(0)
+    setPlayer1Name("")
+    setPlayer2Name("")
+    setMatchDuration(1)
+    setIsMatchSetUp(false)
 }
 
 const handleFoul = () => {

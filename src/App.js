@@ -19,7 +19,17 @@ function App() {
 					setIsMatchSetUp={setIsMatchSetUp}
 				/>
 			)}
-			{isMatchSetUp && <Main player1Name={player1Name} player2Name={player2Name} matchDuration={matchDuration} />}
+			{isMatchSetUp && (
+				<Main
+					player1Name={player1Name}
+					player2Name={player2Name}
+					matchDuration={matchDuration}
+					setPlayer1Name={setPlayer1Name}
+					setPlayer2Name={setPlayer2Name}
+					setMatchDuration={setMatchDuration}
+					setIsMatchSetUp={setIsMatchSetUp}
+				/>
+			)}
 		</div>
 	);
 }

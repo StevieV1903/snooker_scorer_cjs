@@ -6,7 +6,15 @@ import FrameScorer from './components/FrameScore.js';
 
 import balls from '././assets/snookertriangle.png';
 
-const Main = ({ player1Name, player2Name, matchDuration }) => {
+const Main = ({
+	player1Name,
+	player2Name,
+	matchDuration,
+	setPlayer1Name,
+	setPlayer2Name,
+	setMatchDuration,
+	setIsMatchSetUp
+}) => {
 	const [ player1Score, setPlayer1Score ] = useState(0);
 	const [ player2Score, setPlayer2Score ] = useState(0);
 	const [ activePlayer, setActivePlayer ] = useState(1);
@@ -67,6 +75,13 @@ const Main = ({ player1Name, player2Name, matchDuration }) => {
 					player2Frames={player2Frames}
 					setPlayer1Frames={setPlayer1Frames}
 					setPlayer2Frames={setPlayer2Frames}
+					player1Name={player1Name}
+					player2Name={player2Name}
+					setIsMatchSetUp={setIsMatchSetUp}
+					setMatchDuration={setMatchDuration}
+					setPlayer1Name={setPlayer1Name}
+                    setPlayer2Name={setPlayer2Name}
+                    matchDuration={matchDuration}
 				/>
 			</header>
 		</div>
