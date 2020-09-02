@@ -1,77 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
-import Player from './components/PlayerComponent.js';
-import Buttons from './components/ButtonsComponent.js';
-import FrameScorer from './components/FrameScore.js';
-
-import balls from '././assets/snookertriangle.png';
+import Main from './Main.js';
+import Landing from './components/LandingPage.js';
 
 function App() {
+	const [ player1Name, setPlayer1Name ] = useState('');
+	const [ player2Name, setPlayer2Name ] = useState('');
+	const [ matchDuration, setMatchDuration ] = useState(1);
+	const [ isMatchSetUp, setIsMatchSetUp ] = useState(false);
 
-  const [player1Score, setPlayer1Score] = useState(0);
-  const [player2Score, setPlayer2Score] = useState(0);
-  const [activePlayer, setActivePlayer ] = useState(1);
-  const [player1Break, setPlayer1Break ] = useState(0);
-  const [player2Break, setPlayer2Break ] = useState(0);
-  const [player1Breaks, setPlayer1Breaks] = useState([]);
-  const [player2Breaks, setPlayer2Breaks] = useState([]);
-  const [player1Frames, setPlayer1Frames] = useState(0)
-  const [player2Frames, setPlayer2Frames] = useState(0)
-
-
-
-  return (
-    <div className="App">
-
-      <header className="App-header">
-        <div className="App-title">
-          <h1>Snooker Scorer <img src={balls} alt="red snooker balls" /></h1>
-        </div>
-        <div className="player-names">
-          <Player 
-          playerNumber={1} 
-          playerScore={player1Score} 
-          activePlayer={activePlayer}
-          playerBreak={player1Break}
-          playerBreaks={player1Breaks}
-          />
-          <FrameScorer 
-          player1Frames={player1Frames}
-          player2Frames={player2Frames}
-          />
-          <Player 
-          playerNumber={2} 
-          playerScore={player2Score} 
-          activePlayer={activePlayer}
-          playerBreak={player2Break}
-          playerBreaks={player2Breaks}
-          />
-        </div>
-          <Buttons 
-          player1Score={player1Score} 
-          player2Score={player2Score} 
-          activePlayer={ activePlayer } 
-          setActivePlayer={setActivePlayer} 
-          setPlayer1Score={setPlayer1Score} 
-          setPlayer2Score={setPlayer2Score}
-          player1Break={player1Break}
-          player2Break={player2Break}
-          setPlayer1Break={setPlayer1Break}
-          setPlayer2Break={setPlayer2Break}
-          player1Breaks={player1Breaks}
-          player2Breaks={player2Breaks}
-          setPlayer1Breaks={setPlayer1Breaks}
-          setPlayer2Breaks={setPlayer2Breaks}
-          player1Frames={player1Frames}
-          player2Frames={player2Frames}
-          setPlayer1Frames={setPlayer1Frames}
-          setPlayer2Frames={setPlayer2Frames}
-          />
-
-      </header>
-
-    </div>
-  );
+	return (
+		<div className="App">
+			{!isMatchSetUp && (
+				<Landing
+					setPlayer1Name={setPlayer1Name}
+					setPlayer2Name={setPlayer2Name}
+					setMatchDuration={setMatchDuration}
+					setIsMatchSetUp={setIsMatchSetUp}
+				/>
+			)}
+			{isMatchSetUp && <Main player1Name={player1Name} player2Name={player2Name} matchDuration={matchDuration} />}
+		</div>
+	);
 }
 
 export default App;

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './PlayerComponent.css';
 
 
-const Player = ({ playerNumber, playerScore, activePlayer, playerBreak, playerBreaks }) => {
+const Player = ({ playerNumber, playerScore, activePlayer, playerBreak, playerBreaks, playerName }) => {
 
-    const [ playerName, setPlayerName ] = useState( "" );
+    // const [ playerName, setPlayerName ] = useState( "" );
 
     const handleSubmit = ( event ) => {
         event.preventDefault();
@@ -17,18 +17,18 @@ return (
     <>
     
 <div>
-    <form onSubmit={ handleSubmit }>
+    {/* <form onSubmit={ handleSubmit }>
         <label>
             Name:
         <input type="text" value={ playerName } 
         onChange={ event => setPlayerName( event.target.value )}
         placeholder="Enter Name"  required/> 
         
-        {/* <input type="submit" value="Submit" />   */}
+        <input type="submit" value="Submit" />  
         </label> 
-    </form>
+    </form> */}
 
-    <h1 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Player { playerNumber }: { playerName }</h1>
+    <h1 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}> { playerName }</h1>
     
     <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Score: { playerScore }</h2>
 
