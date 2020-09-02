@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Main from './Main.js';
 import Landing from './components/LandingPage.js';
+import Header from './components/Header.js';
 
 function App() {
 	const [ player1Name, setPlayer1Name ] = useState('');
@@ -11,6 +12,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Header />
 			{!isMatchSetUp && (
 				<Landing
 					setPlayer1Name={setPlayer1Name}

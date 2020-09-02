@@ -1,4 +1,5 @@
 import React from 'react';
+import './LandingPage.css';
 
 const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp }) => {
 	const handleSubmit = (event) => {
@@ -7,6 +8,8 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 	};
 
 	return (
+        <>
+        <div className="form-container">
 		<form onSubmit={handleSubmit}>
 			<label>
 				Player 1 Name:
@@ -17,7 +20,7 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					placeholder="Enter Name"
 					required
 				/>
-			</label>
+			</label><br/>
 
 			<label>
 				Player 2 Name:
@@ -28,7 +31,7 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					placeholder="Enter Name"
 					required
 				/>
-			</label>
+			</label><br/>
 
 			<label>
 				Number of frames:
@@ -51,11 +54,13 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					<option value={31}>31</option>
 					<option value={33}>33</option>
 					<option value={35}>35</option>
-				</select>
+				</select><br/>
 			</label>
 
 			<input type="submit" value="Submit" />
 		</form>
+        </div>
+        </>
 	);
 };
 

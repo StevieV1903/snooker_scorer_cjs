@@ -4,8 +4,6 @@ import Player from './components/PlayerComponent.js';
 import Buttons from './components/ButtonsComponent.js';
 import FrameScorer from './components/FrameScore.js';
 
-import balls from '././assets/snookertriangle.png';
-
 const Main = ({
 	player1Name,
 	player2Name,
@@ -28,11 +26,6 @@ const Main = ({
 	return (
 		<div className="Main">
 			<header className="Main-header">
-				<div className="Main-title">
-					<h1>
-						Snooker Scorer <img src={balls} alt="red snooker balls" />
-					</h1>
-				</div>
 				<div className="player-names">
 					<Player
 						playerNumber={1}
@@ -80,8 +73,8 @@ const Main = ({
 					setIsMatchSetUp={setIsMatchSetUp}
 					setMatchDuration={setMatchDuration}
 					setPlayer1Name={setPlayer1Name}
-                    setPlayer2Name={setPlayer2Name}
-                    matchDuration={matchDuration}
+					setPlayer2Name={setPlayer2Name}
+					matchDuration={matchDuration}
 				/>
 			</header>
 		</div>

@@ -1,24 +1,29 @@
-.frame-scorer-container { 
-    justify-content: center;
-    align-items: center;
-    
+.frame-scorer-container {
+	justify-content: center;
+	align-items: center;
 }
 
 .frame-scorer {
-    border: solid 1px #949494;
-    padding: 20px 40px;
-    border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2ffd7;
+	border: solid 1px #949494;
+	padding: 20px 40px;
+	border-radius: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f2ffd7;
 }
 
 .frame-scorer h1 {
-    font-size: 40px;
-    text-align: center;
+	font-size: 40px;
+	text-align: center;
 }
 
 .frame-scorer h2 {
-    font-size: 28px;
-    padding: 0;
-    margin: 0;
+	font-size: 28px;
+	padding: 0;
+	margin: 0;
+}
+.frame-scorer h3 {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 15px;
 }

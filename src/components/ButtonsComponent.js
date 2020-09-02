@@ -77,6 +77,7 @@ const handleBlack = () => {
 }
 
 const handleEndFrame = () => {
+    
     if (player1Score > player2Score){
         setPlayer1Frames(player1Frames += 1)
         setPlayer1Score(0)
@@ -87,7 +88,10 @@ const handleEndFrame = () => {
         setPlayer2Score(0)
     }
        const matchWin = ((parseInt(matchDuration) + 1 ) / 2)
-        if (player1Frames  || player2Frames === matchWin ){
+       console.log(matchWin)
+       console.log(player1Frames)
+       console.log(player2Frames)
+        if (player1Frames === matchWin || player2Frames === matchWin ){
         handleEndMatch();
         }
         handleSwitchPlayer()
