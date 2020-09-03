@@ -1,95 +1,96 @@
 #button-container {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 50px;
 }
 
 button {
-    margin: 7px;
-    font-size: 16px;
-    font-weight: bold;
+	margin: 7px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 #red-button {
-    background-color: red;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: red;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #yellow-button {
-    background-color: #fbce02;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: #fbce02;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #green-button {
-    background-color: rgb(0, 90, 0);
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: rgb(0, 90, 0);
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #brown-button {
-    background-color: #832121;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: #832121;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #blue-button {
-    background-color: #3131ff;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: #3131ff;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #pink-button {
-    background-color: #ff6a82;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: #ff6a82;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 #black-button {
-    background-color: black;
-    color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: none;
+	background-color: black;
+	color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: none;
 }
 
 #foul-button {
-    background-color: whitesmoke;
-    color: black;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: solid 1px black;
+	background-color: whitesmoke;
+	color: black;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: solid 1px black;
 }
 
 .game-button {
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-left: 40px;
-    width: 200px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    background-color: rosybrown;
-    color: white;
-    border: solid 1px black;
+	margin-top: 30px;
+	margin-right: 40px;
+	margin-left: 40px;
+	width: 200px;
+	padding: 10px 15px;
+	border-radius: 8px;
+	font-weight: bold;
+	background-color: rosybrown;
+	color: white;
+	border: solid 1px black;
 }

@@ -11,11 +11,14 @@ const Main = ({
 	setPlayer1Name,
 	setPlayer2Name,
 	setMatchDuration,
-	setIsMatchSetUp
+	setIsMatchSetUp,
+	firstBreaker,
+	setFirstBreaker,
+	activePlayer,
+	setActivePlayer
 }) => {
 	const [ player1Score, setPlayer1Score ] = useState(0);
 	const [ player2Score, setPlayer2Score ] = useState(0);
-	const [ activePlayer, setActivePlayer ] = useState(1);
 	const [ player1Break, setPlayer1Break ] = useState(0);
 	const [ player2Break, setPlayer2Break ] = useState(0);
 	const [ player1Breaks, setPlayer1Breaks ] = useState([]);
@@ -39,6 +42,7 @@ const Main = ({
 						player1Frames={player1Frames}
 						player2Frames={player2Frames}
 						matchDuration={matchDuration}
+						firstBreaker={firstBreaker}
 					/>
 					<Player
 						playerNumber={2}
@@ -75,6 +79,8 @@ const Main = ({
 					setPlayer1Name={setPlayer1Name}
 					setPlayer2Name={setPlayer2Name}
 					matchDuration={matchDuration}
+					setFirstBreaker={setFirstBreaker}
+					firstBreaker={firstBreaker}
 				/>
 			</header>
 		</div>

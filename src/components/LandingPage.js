@@ -1,10 +1,23 @@
 import React from 'react';
 import './LandingPage.css';
 
-const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, setFirstBreaker }) => {
+const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, setFirstBreaker, firstBreaker, setActivePlayer }) => {
+	
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		if(firstBreaker === "random"){
+		const randomBreaker = Math.floor((Math.random() * 2) + 1);
+				if(randomBreaker === 1){
+					setFirstBreaker(player1Name)
+					setActivePlayer(1)
+				}else {
+					setFirstBreaker(player2Name)
+					setActivePlayer(2)
+				}
+		}
+		
 		setIsMatchSetUp(true);
+		// setActivePlayer(firstBreaker)
 	};
 
 	return (

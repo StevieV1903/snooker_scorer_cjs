@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ButtonsComponent.css';
 import FoulButtons from "./FoulButtons.js";
 
-const Buttons = ({player1Score, player2Score, activePlayer, setPlayer1Score, setPlayer2Score, setActivePlayer, player1Break, player2Break, setPlayer1Break, setPlayer2Break, player1Breaks, setPlayer1Breaks, player2Breaks, setPlayer2Breaks, player1Frames, player2Frames, setPlayer1Frames, setPlayer2Frames, setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, matchDuration }) => {
+const Buttons = ({player1Score, player2Score, activePlayer, setPlayer1Score, setPlayer2Score, setActivePlayer, player1Break, player2Break, setPlayer1Break, setPlayer2Break, player1Breaks, setPlayer1Breaks, player2Breaks, setPlayer2Breaks, player1Frames, player2Frames, setPlayer1Frames, setPlayer2Frames, setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, matchDuration, setFirstBreaker, firstBreaker }) => {
 
 const [isAFoul, setIsAFoul] = useState(false)
 
@@ -95,6 +95,13 @@ const handleEndFrame = () => {
         handleEndMatch();
         }
         handleSwitchPlayer()
+        if(firstBreaker === player1Name){
+            setFirstBreaker(player2Name)
+            setActivePlayer(2)
+        } else {
+            setFirstBreaker(player1Name)
+            setActivePlayer(1)
+        }
 }
 
 const handleSwitchPlayer = () => {
@@ -136,6 +143,7 @@ const handleEndMatch = () => {
     setPlayer2Name("")
     setMatchDuration(1)
     setIsMatchSetUp(false)
+    setFirstBreaker('random')
 }
 
 const handleFoul = () => {

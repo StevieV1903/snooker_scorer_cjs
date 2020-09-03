@@ -1,6 +1,10 @@
 .active-player {
-   color: green; 
+	color: green;
 }
 .non-active-player {
-    color: black;
-} 
+	color: black;
+}
+
+.player-container {
+	margin-top: 20px;
+}

@@ -16,7 +16,7 @@ const Player = ({ playerNumber, playerScore, activePlayer, playerBreak, playerBr
 return (
     <>
     
-<div>
+<div className="player-container">
     {/* <form onSubmit={ handleSubmit }>
         <label>
             Name:
@@ -27,7 +27,7 @@ return (
         <input type="submit" value="Submit" />  
         </label> 
     </form> */}
-
+    {console.log("active player", activePlayer)}
     <h1 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}> { playerName }</h1>
     
     <h2 className={activePlayer === playerNumber ? "active-player" : "non-active-player"}>Score: { playerScore }</h2>

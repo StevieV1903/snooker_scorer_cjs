@@ -9,7 +9,8 @@ function App() {
 	const [ player2Name, setPlayer2Name ] = useState('');
 	const [ matchDuration, setMatchDuration ] = useState(1);
 	const [ isMatchSetUp, setIsMatchSetUp ] = useState(false);
-	const [ firstBreaker, setFirstBreaker ] = useState('');
+	const [ firstBreaker, setFirstBreaker ] = useState('random');
+	const [ activePlayer, setActivePlayer ] = useState(1);
 
 	return (
 		<div className="App">
@@ -23,6 +24,8 @@ function App() {
 					player1Name={player1Name}
 					player2Name={player2Name}
 					setFirstBreaker={setFirstBreaker}
+					firstBreaker={firstBreaker}
+					setActivePlayer={setActivePlayer}
 				/>
 			)}
 			{isMatchSetUp && (
@@ -34,6 +37,10 @@ function App() {
 					setPlayer2Name={setPlayer2Name}
 					setMatchDuration={setMatchDuration}
 					setIsMatchSetUp={setIsMatchSetUp}
+					firstBreaker={firstBreaker}
+					setFirstBreaker={setFirstBreaker}
+					activePlayer={activePlayer}
+					setActivePlayer={setActivePlayer}
 				/>
 			)}
 		</div>
