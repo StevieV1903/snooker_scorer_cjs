@@ -14,6 +14,10 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					setFirstBreaker(player2Name)
 					setActivePlayer(2)
 				}
+		}else if  (firstBreaker === player1Name){
+			setActivePlayer(1)
+		} else if (firstBreaker === player2Name) {
+			setActivePlayer(2)
 		}
 		
 		setIsMatchSetUp(true);

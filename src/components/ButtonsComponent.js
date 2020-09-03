@@ -124,6 +124,7 @@ const handleSwitchPlayer = () => {
 }
 
 const handleEndMatch = () => {
+    window.location.reload(true)
     if (player1Frames > player2Frames) {
         alert( player1Name + " has won!")
     } else if (player2Frames > player1Frames){
