@@ -188,4 +188,58 @@ button {
 	}
 }
 
+@media screen and (max-width: 420px) {
+    button {
+		font-size: 14px;
+	}
+	.red-button {
+		height: 70px;
+		width: 70px;	
+	}
+	
+	.yellow-button {
+		height: 70px;
+		width: 70px;	
+	}
+	
+	.green-button {
+		height: 70px;
+		width: 70px;		
+	}
+	
+	.brown-button {
+		height: 70px;
+		width: 70px;	
+	}
+	
+	.blue-button {
+		height: 70px;
+		width: 70px;	
+	}
+	
+	.pink-button {
+		height: 70px;
+		width: 70px;	
+	}
+	.black-button {
+		height: 70px;
+		width: 70px;	
+	}
+	
+	.foul-button {
+		height: 70px;
+		width: 70px;	
+	}
+	.game-button {
+		margin: 10px;
+		width: 175px;
+		padding: 10px 15px;
+		border-radius: 8px;
+		font-size: 14px;
+		
+	
+	}
+}
+
+
 

@@ -1,6 +1,7 @@
 .frame-scorer-container {
 	justify-content: center;
 	align-items: center;
+	margin: 0px 2px 5px 2px;
 }
 
 .frame-scorer {
@@ -22,12 +23,14 @@
 	font-size: 28px;
 	padding: 0;
 	margin: 0;
+	text-align: center;
 }
 .frame-scorer h3 {
 	text-align: center;
 	padding: 0;
 	margin: 0;
 	padding-bottom: 15px;
+	font-size: 20px;
 }
 .first-break {
 	text-align: center;
@@ -49,9 +52,53 @@
     .frame-scorer {
 		padding: 10px 20px;
 	}
+	.frame-scorer h1 {
+		font-size: 30px;
+	}
 	.frame-scorer h2 {
-		font-size: 25px;
-		padding: 0;
-		margin: 0;
+		font-size: 24px;
+	}
+	.frame-scorer h3 {
+		padding-bottom: 5px;
+	}
+	.first-break {
+		padding-top: 10px;
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 675px) {
+    .frame-scorer {
+		padding: 10px;
+	}
+	.frame-scorer h1 {
+		font-size: 26px;
+	}
+	.frame-scorer h2 {
+		font-size: 20px;
+	}
+	.frame-scorer h3 {
+		font-size: 18px;
+	}
+	.first-break {
+		padding-top: 10px;
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.frame-scorer h1 {
+		font-size: 22px;
+	}
+	.frame-scorer h2 {
+		font-size: 18px;
+	}
+	.frame-scorer h3 {
+		font-size: 16px;
+	}
+	.first-break {
+		font-size: 18px;
 	}
 }

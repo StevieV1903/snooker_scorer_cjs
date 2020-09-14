@@ -1,5 +1,5 @@
 .active-player {
-	margin-top: 30px;
+	margin: 5px;
 	font-family: 'ABeeZee', sans-serif;
 	border: solid 1px white;
 	border-radius: 10px;
@@ -13,16 +13,18 @@
 	padding-bottom: 20px;
 	text-align: left;
 	color: #005000;
+	font-size: 36px;
 }
 
 .active-player h2 {
 	margin: 0;
 	padding-bottom: 10px;
 	color: #005000;
+	font-size: 28px;
 }
 
 .non-active-player {
-	margin-top: 30px;
+	margin: 5px;
 	font-family: 'ABeeZee', sans-serif;
 	border: solid 1px white;
 	border-radius: 10px;
@@ -36,33 +38,107 @@
 	margin: 0;
 	padding-bottom: 20px;
 	text-align: left;
-	color: #979797;	
+	color: #979797;
+	font-size: 36px;
 }
 
 .non-active-player h2 {
 	margin: 0;
 	padding-bottom: 10px;
 	color: #979797;	
+	font-size: 28px;
 	
 }
 
 /* RESPONSIVE RULES  */
 
-@media screen and (max-width: 800px) {
-    .player-container {
-		padding: 15px 30px 15px 10px;
-		background-color: ghostwhite;
-		box-shadow: 0 5px 15px 0px #000000cc;
+@media screen and (max-width: 850px) {
+    .active-player {
+		margin-top: 20px;
+		padding: 10px 40px 10px 10px;
 	}
-	.player-container h1 {
-		margin: 0;
+	.non-active-player {
+		margin-top: 20px;
+		padding: 10px 40px 10px 10px;
+	}
+	.active-player h1 {
+		padding-bottom: 15px;
+		font-size: 30px;
+	}
+	.active-player h2 {
 		padding-bottom: 10px;
-		font-size: 26px;
-	}
-	.player-container h2 {
 		font-size: 24px;
 	}
+	.non-active-player h1 {
+		padding-bottom: 15px;	
+		font-size: 30px;
+	}
+	.non-active-player h2 {
+		padding-bottom: 10px;
+		font-size: 24px;
+		
+	}
 }
+
+@media screen and (max-width: 620px) {
+    .active-player {
+		padding: 10px 25px 10px 10px;
+	}
+	.non-active-player {
+		padding: 10px 25px 10px 10px;
+	}
+	.active-player h1 {
+		padding-bottom: 10px;
+		font-size: 24px;
+	}
+	.active-player h2 {
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+	.non-active-player h1 {
+		padding-bottom: 10px;	
+		font-size: 24px;
+	}
+	.non-active-player h2 {
+		padding-bottom: 10px;
+		font-size: 20px;
+		
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.active-player {
+		padding: 10px;
+	}
+	.non-active-player {
+		padding: 10px;
+	}
+	.active-player h1 {
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 5px;
+		font-weight: bold;
+	}
+	.active-player h2 {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.non-active-player h1 {
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 5px;
+		font-weight: bold;
+	}
+	.non-active-player h2 {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 5px;
+		
+	}
+}
+
+
 
 
 
