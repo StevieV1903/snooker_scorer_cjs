@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './LandingPage.css';
 
 const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchSetUp, player1Name, player2Name, setFirstBreaker, firstBreaker, setActivePlayer }) => {
+
+	useEffect(()=> {
+		window.scrollTo( 0, 0 )
+	});
 	
 	const handleSubmit = (event) => {
 		event.preventDefault();

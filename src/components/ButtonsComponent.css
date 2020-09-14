@@ -191,6 +191,7 @@ button {
 @media screen and (max-width: 420px) {
     button {
 		font-size: 14px;
+		margin: 4px;
 	}
 	.red-button {
 		height: 70px;
