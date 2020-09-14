@@ -10,45 +10,44 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 				if(randomBreaker === 1){
 					setFirstBreaker(player1Name)
 					setActivePlayer(1)
-				}else {
+				} else {
 					setFirstBreaker(player2Name)
 					setActivePlayer(2)
 				}
-		}else if  (firstBreaker === player1Name){
+		} else if  (firstBreaker === player1Name){
 			setActivePlayer(1)
 		} else if (firstBreaker === player2Name) {
 			setActivePlayer(2)
 		}
 		
 		setIsMatchSetUp(true);
-		// setActivePlayer(firstBreaker)
 	};
 
 	return (
         <>
         <div className="form-container">
-		<form onSubmit={handleSubmit}>
+		<form className="game-form" onSubmit={handleSubmit}>
 			<label>
-				Player 1 Name:
+				Player 1:
 				<input
 					type="text"
-					// value={player1Name}
 					onChange={(event) => setPlayer1Name(event.target.value)}
 					placeholder="Enter Name"
 					required
 				/>
-			</label><br/>
+			</label>
+			<br />
 
 			<label>
-				Player 2 Name:
+				Player 2:
 				<input
 					type="text"
-					// value={player2Name}
 					onChange={(event) => setPlayer2Name(event.target.value)}
 					placeholder="Enter Name"
 					required
 				/>
-			</label><br/>
+			</label>
+			<br />
 
 			<label>
 				Number of frames:
@@ -71,18 +70,23 @@ const Landing = ({ setPlayer1Name, setPlayer2Name, setMatchDuration, setIsMatchS
 					<option value={31}>31</option>
 					<option value={33}>33</option>
 					<option value={35}>35</option>
-				</select><br/>
+				</select>
 			</label>
+			<br />
+
             <label>
-                Select player to break:
+                Player to break:
                 <select onChange={(event) => setFirstBreaker(event.target.value)}>
                     <option value="random">Random</option>
                     <option value={player1Name}>{player1Name}</option>
                     <option value={player2Name}>{player2Name}</option>
                 </select>
             </label>
-
-			<input type="submit" value="Submit" />
+			<br />
+			<div className="submit-container">
+			<button type="submit" value="Submit">START MATCH</button>
+			</div>
+			<br />
 		</form>
         </div>
         </>

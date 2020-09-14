@@ -4,10 +4,16 @@ import './Header.css';
 
 const Header = () => {
 	return (
-		<div className="Main-title">
-			<h1>
-				Snooker Scorer <img src={balls} alt="red snooker balls" />
-			</h1>
+		<div className="header-container">
+			<div className="header-banner">
+				<div className="header-text">
+					Snooker Scorer 
+				</div>
+				<div className="header-image">
+				<img src={balls} alt="red snooker balls" />
+				</div>
+			</div>
+			
 		</div>
 	);
 };

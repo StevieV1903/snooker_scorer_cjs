@@ -1,20 +1,118 @@
 .form-container {
-	background-color: palegreen;
-	/* width: 200px; */
-	padding: 20px;
 	margin: 0;
 	display: flex;
 	justify-content: center;
-	height: 76vh;
-	width: 100%;
-	font-size: 26px;
+	height: 100vh;
+	font-size: 30px;
+	font-family: 'ABeeZee', sans-serif;
+	color: ghostwhite;
+}
+.game-form {
+	margin-top: 70px;
 }
 
 input {
-	margin: 10px;
-	font-size: 22px;
+    color: black;
+    padding: 10px 20px 10px 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 22px;
+	width: auto;
+	font-family: 'ABeeZee', sans-serif;
+	margin: 20px 20px;
+	
+  }
+  select {
+    color: #707070;
+    padding: 10px 20px 10px 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 22px;
+	width: auto;
+	font-family: 'ABeeZee', sans-serif;
+	margin: 10px 20px;
+  }
+
+  .submit-container {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .form-container button {
+	background-color: ghostwhite;
+	color: #707070;
+	border: solid 1px black;
+    border-radius: 5px;
+    font-size: 24px;
+	width: auto;
+	padding: 15px 20px;
+	margin-top: 80px;	
 }
-select {
-	margin: 10px;
-	font-size: 22px;
+.form-container button:hover {
+	background-color:  #707070;
+	color: ghostwhite;
+	border: solid 1px black;
+	cursor: pointer;	
 }
+
+  /* RESPONSIVE RULES */
+
+  @media screen and (max-width: 600px) {
+    .form-container {
+		font-size: 22px;
+	}
+	.game-form {
+		margin-top: 60px;
+	}
+	.form-container button {
+		font-size: 20px;
+		padding: 10px 15px;	
+	}
+	input {
+		font-size: 18px;	
+	}
+	select {
+		font-size: 18px;
+		
+	}
+}
+
+@media screen and (max-width: 450px) {
+    .form-container {
+		font-size: 18px;
+	}
+	.form-container button {
+		font-size: 16px;
+		padding: 10px;	
+		margin-top: 40px;
+	}
+	input {
+		font-size: 16px;
+		padding: 5px;
+		margin: 10px 5px;	
+	}
+	select {
+		font-size: 16px;
+		padding: 5px;
+		margin: 10px 5px;	
+		
+	}
+}
+
+@media screen and (max-width: 320px) {
+    .form-container {
+		font-size: 16px;
+	}
+	.form-container button {
+		margin-top: 20px;
+	}
+	input {
+		font-size: 16px;	
+	}
+	select {
+		font-size: 16px;
+		
+	}
+}
+
+

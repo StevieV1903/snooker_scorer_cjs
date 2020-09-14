@@ -1,10 +1,70 @@
 .active-player {
-	color: green;
-}
-.non-active-player {
-	color: black;
+	margin-top: 30px;
+	font-family: 'ABeeZee', sans-serif;
+	border: solid 1px white;
+	border-radius: 10px;
+	padding: 20px 60px 20px 15px;
+	box-shadow: 0 5px 15px 0px #fffefe;
+	background-color: #01ff01;
 }
 
-.player-container {
-	margin-top: 20px;
+.active-player h1 {
+	margin: 0;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #005000;
 }
+
+.active-player h2 {
+	margin: 0;
+	padding-bottom: 10px;
+	color: #005000;
+}
+
+.non-active-player {
+	margin-top: 30px;
+	font-family: 'ABeeZee', sans-serif;
+	border: solid 1px white;
+	border-radius: 10px;
+	padding: 20px 60px 20px 15px;
+	background-color: ghostwhite;
+	box-shadow: 0 5px 15px;
+	
+}
+
+.non-active-player h1 {
+	margin: 0;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #979797;	
+}
+
+.non-active-player h2 {
+	margin: 0;
+	padding-bottom: 10px;
+	color: #979797;	
+	
+}
+
+/* RESPONSIVE RULES  */
+
+@media screen and (max-width: 800px) {
+    .player-container {
+		padding: 15px 30px 15px 10px;
+		background-color: ghostwhite;
+		box-shadow: 0 5px 15px 0px #000000cc;
+	}
+	.player-container h1 {
+		margin: 0;
+		padding-bottom: 10px;
+		font-size: 26px;
+	}
+	.player-container h2 {
+		font-size: 24px;
+	}
+}
+
+
+
+
+

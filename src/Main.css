@@ -1,28 +1,13 @@
-.Main-title {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
-	background-color: teal;
-	color: white;
-	font-size: 25px;
-	font-family: fantasy;
-	padding: 25px;
-}
 
-.player-names {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-top: 20px;
-}
-
-.Main-header h1 {
-	text-align: left;
-	padding: 0;
+.main-container {
 	margin: 0;
+	min-height: 100vh;
+
 }
 
-.Main-header img {
-	height: 70px;
+.main-banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0;
 }

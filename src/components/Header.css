@@ -1,21 +1,77 @@
-.Main-title {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.header-container {
 	width: 100%;
-	background-color: teal;
+	height: 150px;
+	background-color: #002525;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.header-banner {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	margin: 30px;
+	align-items: center;
+}
+
+.header-text {
+	text-align: right;
+	padding-right: 20px;
+	font-size: 42px;
 	color: white;
-	font-size: 25px;
-	font-family: fantasy;
-	padding: 25px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bold;
 }
 
-.Main-title h1 {
-	text-align: left;
-	padding: 0;
-	margin: 0;
+.header-image img {
+	height: 90px;
+	padding-left: 20px
 }
 
-.Main-title img {
-	height: 70px;
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 600px) {
+	.header-container {
+		height: 120px;
+	}
+    .header-text {
+		padding-right: 10px;
+		font-size: 35px;
+	}
+	.header-image img {
+		height: 70px;
+		padding-left: 10px
+	}
 }
+
+@media screen and (max-width: 500px) {
+	.header-container {
+		height: 100px;
+	}
+    .header-text {
+		padding-right: 5px;
+		font-size: 28px;
+	}
+	.header-image img {
+		height: 55px;
+		padding-left: 0px;
+	}
+	.header-banner {
+		margin: 15px 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+    .header-text {
+		font-size: 24px;
+	}
+	.header-image img {
+		height: 45px;
+		
+	}
+	.header-banner {
+		margin: 15px 5px;
+	}
+}
+
+
+

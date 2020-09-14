@@ -27,9 +27,9 @@ const Main = ({
 	const [ player2Frames, setPlayer2Frames ] = useState(0);
 
 	return (
-		<div className="Main">
-			<header className="Main-header">
-				<div className="player-names">
+		<div>
+			<div className="main-container">
+				<div className="main-banner">
 					<Player
 						playerNumber={1}
 						playerScore={player1Score}
@@ -82,7 +82,7 @@ const Main = ({
 					setFirstBreaker={setFirstBreaker}
 					firstBreaker={firstBreaker}
 				/>
-			</header>
+			</div>
 		</div>
 	);
 };

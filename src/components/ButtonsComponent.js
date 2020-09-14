@@ -144,11 +144,11 @@ const handleSwitchPlayer = () => {
 
 const handleEndMatch = () => {
     if (player1Frames > player2Frames) {
-        swal(<h1 className="alert"> {player1Name}  has won  {player1Frames} : {player2Frames}</h1>)
+        swal(<h1 className="alert"> {player1Name} has won the match <br/> {player1Frames} : {player2Frames}</h1>)
     } else if (player2Frames > player1Frames){
-        swal(<h1 className="alert">{player2Name}  has won  {player2Frames} : {player1Frames}</h1>)
+        swal(<h1 className="alert">{player2Name} has won the match <br/> {player2Frames} : {player1Frames}</h1>)
     } else {
-        swal(<h1 className="alert">It is a draw!</h1>)
+        swal(<h1 className="alert">Match ends in a draw!</h1>)
     }
     setPlayer1Score(0)
     setPlayer2Score(0)
@@ -171,23 +171,23 @@ const handleFoul = () => {
     } else {
         setIsAFoul(true)
     }
-   
-
-
 }
 
     return (
 <>
-        <div id="button-container">
-            {!isAFoul && <> <button id="red-button" onClick={handleRed}>RED</button>
-            <button id="yellow-button" onClick={handleYellow}>YELLOW</button>
-            <button id="green-button" onClick={handleGreen}>GREEN</button>
-            <button id="brown-button" onClick={handleBrown}>BROWN</button>
-            <button id="blue-button" onClick={handleBlue}>BLUE</button>
-            <button id="pink-button" onClick={handlePink}>PINK</button>
-            <button id="black-button" onClick={handleBlack}>BLACK</button></>}
-            <button id="foul-button" onClick={handleFoul}>FOUL</button>
-            {isAFoul && <FoulButtons 
+        <div className="buttons-container">
+            <div className="balls-button-container">
+            {!isAFoul && <> 
+            <button className="red-button" onClick={handleRed}>RED</button>
+            <button className="yellow-button" onClick={handleYellow}>YELLOW</button>
+            <button className="green-button" onClick={handleGreen}>GREEN</button>
+            <button className="brown-button" onClick={handleBrown}>BROWN</button>
+            <button className="blue-button" onClick={handleBlue}>BLUE</button>
+            <button className="pink-button" onClick={handlePink}>PINK</button>
+            <button className="black-button" onClick={handleBlack}>BLACK</button></>}
+            <button className="foul-button" onClick={handleFoul}>FOUL</button>
+            {isAFoul && 
+            <FoulButtons 
             player1Score={player1Score}
             player2Score={player2Score}
             setPlayer1Score={setPlayer1Score}
@@ -195,12 +195,13 @@ const handleFoul = () => {
             activePlayer={activePlayer}
             setIsAFoul={setIsAFoul}
              />}
-            <br></br>
-            <button className="game-button" onClick={handleSwitchPlayer}>SWITCH PLAYER</button>
-            <button className="game-button" onClick={handleEndFrame}>END FRAME</button>
-            <br></br>
-            <button className="game-button" onClick={handleEndMatch}>END MATCH</button>
-            {/* <button>FOUL</button> */}
+             </div>
+            
+            <div className="games-button-container">
+                    <button className="game-button" onClick={handleSwitchPlayer}>SWITCH PLAYER</button>
+                    <button className="game-button" onClick={handleEndFrame}>END FRAME</button>
+                    <button className="game-button" onClick={handleEndMatch}>END MATCH</button>
+            </div>
 
         </div>
 </>

@@ -1,96 +1,191 @@
-#button-container {
+.buttons-container {
 	width: 100%;
-	display: inline-block;
-	text-align: center;
-	margin-top: 50px;
+	margin: 50px 0px;
+	
+}
+.balls-button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.games-button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
 }
 
 button {
 	margin: 7px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
+	box-shadow: 0 5px 15px 0px #000000cc;
+	border: solid 1px black;
 }
 
-#red-button {
+.red-button {
 	background-color: red;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	
 }
 
-#yellow-button {
+.yellow-button {
 	background-color: #fbce02;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	
 }
 
-#green-button {
+.green-button {
 	background-color: rgb(0, 90, 0);
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	
 }
 
-#brown-button {
+.brown-button {
 	background-color: #832121;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	
 }
 
-#blue-button {
+.blue-button {
 	background-color: #3131ff;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	
 }
 
-#pink-button {
+.pink-button {
 	background-color: #ff6a82;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
 }
-#black-button {
+.black-button {
 	background-color: black;
 	color: white;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: none;
+	border: solid 1px #aaaaaa
+	
 }
 
-#foul-button {
+.foul-button {
 	background-color: whitesmoke;
 	color: black;
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	border: solid 1px black;
+	
 }
 
 .game-button {
-	margin-top: 30px;
-	margin-right: 40px;
-	margin-left: 40px;
-	width: 200px;
-	padding: 10px 15px;
+	margin: 15px;
+	padding: 15px 20px;
 	border-radius: 8px;
-	font-weight: bold;
-	background-color: rosybrown;
+	border: solid 1px white;
+	background-color: #00adad;
 	color: white;
-	border: solid 1px black;
+	font-size: 20px;
 }
+
+.game-button:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+
+}
+
+.alert {
+	font-family: 'ABeeZee', sans-serif;
+}
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 950px) {
+    button {
+		font-size: 16px;
+	}
+	.red-button {
+		height: 80px;
+		width: 80px;	
+	}
+	
+	.yellow-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	.green-button {
+		height: 80px;
+		width: 80px;	
+	}
+	
+	.brown-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	.blue-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	.pink-button {
+		height: 80px;
+		width: 80px;
+	}
+	.black-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	.foul-button {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .balls-button-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 0;
+		justify-items: center;
+		margin: 0px 80px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+    .games-button-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 20px;
+		justify-items: center;
+	}
+	.game-button {
+		margin: 10px;
+		width: 200px;
+		padding: 10px 15px;
+		border-radius: 8px;
+		font-size: 18px;
+		
+	
+	}
+}
+
+

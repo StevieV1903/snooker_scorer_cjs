@@ -1,0 +1,80 @@
+/* RESPONSIVE RULES */
+
+/* @media screen and (max-width: 950px) {
+    button {
+		font-size: 16px;
+	}
+	#red-button {
+		height: 80px;
+		width: 80px;	
+	}
+	
+	#yellow-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	#green-button {
+		height: 80px;
+		width: 80px;	
+	}
+	
+	#brown-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	#blue-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	#pink-button {
+		height: 80px;
+		width: 80px;
+	}
+	#black-button {
+		height: 80px;
+		width: 80px;
+	}
+	
+	#foul-button {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .foul-balls-button-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; */
+
+        
+        /* display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 0;
+		justify-items: center;
+		margin: 0px 100px;
+	}
+} */
+
+/* @media screen and (max-width: 640px) {
+    .games-button-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 20px;
+		justify-items: center;
+	}
+	.game-button {
+		margin: 10px;
+		width: 200px;
+		padding: 10px 15px;
+		border-radius: 8px;
+		font-size: 18px;
+		
+	
+	}
+} */
+
+
