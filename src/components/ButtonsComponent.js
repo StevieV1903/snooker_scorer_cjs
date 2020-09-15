@@ -107,12 +107,10 @@ const handleEndFrame = () => {
         setPlayer2Score(0)
     }
        const matchWin = ((parseInt(matchDuration) + 1 ) / 2)
-       console.log(matchWin)
-       console.log(player1Frames)
-       console.log(player2Frames)
-        if (player1Frames === matchWin || player2Frames === matchWin ){
-        handleEndMatch();
-        }
+    //    console.log(matchWin)
+    //    console.log(player1Frames)
+    //    console.log(player2Frames)
+        
         handleSwitchPlayer()
         if(firstBreaker === player1Name){
             setFirstBreaker(player2Name)
@@ -120,6 +118,9 @@ const handleEndFrame = () => {
         } else {
             setFirstBreaker(player1Name)
             setActivePlayer(1)
+        }
+        if (player1Frames === matchWin || player2Frames === matchWin ){
+            handleEndMatch();
         }
 }
 
@@ -194,6 +195,7 @@ const handleFoul = () => {
             setPlayer2Score={setPlayer2Score}
             activePlayer={activePlayer}
             setIsAFoul={setIsAFoul}
+            setActivePlayer={setActivePlayer}
              />}
              </div>
             
