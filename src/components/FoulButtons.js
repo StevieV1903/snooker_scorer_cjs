@@ -2,15 +2,13 @@ import React from 'react';
 
 // import './FoulButtons.css';
 
-const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Score, activePlayer, setIsAFoul, setActivePlayer}) => {
+const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Score, activePlayer, setIsAFoul }) => {
 
     const handleFoulRed = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 4);
-            setActivePlayer(2)
         }else {
             setPlayer1Score(player1Score += 4);
-            setActivePlayer(1)
         }
         setIsAFoul(false)
     }
@@ -18,10 +16,8 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulYellow = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 4);
-            setActivePlayer(2)
         }else {
             setPlayer1Score(player1Score += 4);
-            setActivePlayer(1)
         }
         setIsAFoul(false)
     }
@@ -29,10 +25,8 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulGreen = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 4);
-            setActivePlayer(2)
         }else {
             setPlayer1Score(player1Score += 4);
-            setActivePlayer(1)
         }
         setIsAFoul(false)
     }
@@ -40,10 +34,8 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulBrown = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 4);
-            setActivePlayer(2)
         }else {
-            setPlayer1Score(player1Score += 4);
-            setActivePlayer(1)    
+            setPlayer1Score(player1Score += 4);   
         }
         setIsAFoul(false)
     }
@@ -51,10 +43,8 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulBlue = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 5);
-            setActivePlayer(2)
         }else {
             setPlayer1Score(player1Score += 5);
-            setActivePlayer(1)
         }
         setIsAFoul(false)
     }
@@ -62,10 +52,8 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulPink = () => {
         if(activePlayer === 1) {
             setPlayer2Score(player2Score += 6);
-            setActivePlayer(2)
         }else {
             setPlayer1Score(player1Score += 6);
-            setActivePlayer(1)
         }
         setIsAFoul(false)
     }
@@ -73,10 +61,9 @@ const FoulButtons = ({player1Score, player2Score, setPlayer1Score, setPlayer2Sco
     const handleFoulBlack = () => {
         if(activePlayer === 1) {
         setPlayer2Score(player2Score += 7);
-        setActivePlayer(2)
     }else {
         setPlayer1Score(player1Score += 7);
-        setActivePlayer(1)
+        
         }
         setIsAFoul(false)
     }
