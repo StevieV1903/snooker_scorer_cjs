@@ -33,14 +33,13 @@ The application is hosted on netlify.
 
 ### Web Screenshots
 
+<img width="600" alt="Screenshot Snooker Scorer Home" src="https://user-images.githubusercontent.com/56826534/117454078-a15ca000-af3d-11eb-9a3c-41c09e54f86f.png">
 
+<img width="600" alt="Screenshot Snooker Scorer Active" src="https://user-images.githubusercontent.com/56826534/117454504-1fb94200-af3e-11eb-9e17-3e3d5f514305.png">
 
 ### Mobile Screenshots
 
-
-
-
-
+<img width="200" alt="Screenshot 2021-05-07 at 14 13 15" src="https://user-images.githubusercontent.com/56826534/117454960-96563f80-af3e-11eb-999a-cd072256791a.png"> <img width="256" alt="Screenshot 2021-05-07 at 14 13 46" src="https://user-images.githubusercontent.com/56826534/117454992-9e15e400-af3e-11eb-8399-ec25a394a946.png">
 
 ---
 
