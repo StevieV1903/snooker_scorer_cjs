@@ -1,4 +1,6 @@
-This project was created by Steve Vance, Chris Fraser and James Fraser and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Snooker Scoring Application
+
+This responsive project was created by Steve Vance, Chris Fraser and James Fraser and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
