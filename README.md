@@ -1,8 +1,4 @@
-This app was created by Steve Vance, Chris Fraser and James Fraser.
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by Steve Vance, Chris Fraser and James Fraser and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
