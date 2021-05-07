@@ -1,4 +1,4 @@
-# Snooker Scoring Application
+# [Snooker Scoring Application](https://snooker-scorer-app.netlify.app/)
 
 This responsive project was created by Steve Vance, Chris Fraser and James Fraser and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
