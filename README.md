@@ -39,7 +39,7 @@ The application is hosted on netlify.
 
 ### Mobile Screenshots
 
-<img width="200" alt="Screenshot 2021-05-07 at 14 13 15" src="https://user-images.githubusercontent.com/56826534/117454960-96563f80-af3e-11eb-999a-cd072256791a.png"> <img width="256" alt="Screenshot 2021-05-07 at 14 13 46" src="https://user-images.githubusercontent.com/56826534/117454992-9e15e400-af3e-11eb-8399-ec25a394a946.png">
+<img width="200" alt="Screenshot 2021-05-07 at 14 13 15" src="https://user-images.githubusercontent.com/56826534/117454960-96563f80-af3e-11eb-999a-cd072256791a.png"> <img width="200" alt="Screenshot 2021-05-07 at 14 13 46" src="https://user-images.githubusercontent.com/56826534/117454992-9e15e400-af3e-11eb-8399-ec25a394a946.png">
 
 ---
 
